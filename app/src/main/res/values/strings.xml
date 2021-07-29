@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WIN</string>
+    <string name="answer_next">Дальше</string>
+    <string name="game_time_txt">Время игры</string>
+    <string name="right_answer_txt">Правильных ответов</string>
+    <string name="no_text">Internet connection lost.Swipe to refresh the page</string>
+    <string name="menu_exit">Выход</string>
+    <string name="menu_result">Результаты</string>
+    <string name="menu_start">Играть</string>
+    <string name="image_def">Game Image</string>
+    <string name="result_title">Результаты</string>
+</resources>

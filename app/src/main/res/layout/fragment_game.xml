@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_def"
+                android:src="@drawable/ic_heals" />
+
+            <TextView
+                android:id="@+id/heals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                tools:text="5" />
+
+            <TextView
+                android:id="@+id/heals_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/red_600"
+                android:textSize="28sp"
+                android:visibility="invisible"
+                tools:text="-1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quest_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            tools:text="12/20" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/quest_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/transparent"
+        android:contentDescription="@string/image_def"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_start_back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Test" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_start_back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Test" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_start_back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Test" />
+
+</LinearLayout>
